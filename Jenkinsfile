@@ -7,6 +7,7 @@ pipeline {
     stage("build") {
       steps {
         echo "Inside the build step"
+        echo env.BRANCH_NAME
       }
     }  
     
